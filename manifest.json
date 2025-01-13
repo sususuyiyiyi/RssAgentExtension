@@ -11,7 +11,10 @@
     "48": "icons/icon48.png"
   },
   "action": {
-    "default_icon": "icons/icon48.png"
+    "default_icon": "icons/icon48.png",
+    "default_popup": "popup.html",
+    "default_width": "800px",
+    "default_height": "600px"
   },
   "background": {
     "service_worker": "background.js"
