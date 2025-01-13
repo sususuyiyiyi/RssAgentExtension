@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coze Knowledge Base Importer</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #FFFAF0;
+    }
+    .form-group {
+      margin-bottom: 8px;
+    }
+    label {
+      display: block;
+      margin-bottom: 3px;
+      font-weight: bold;
+      color: #8B7355;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 6px;
+      border: 1px solid #FFE4B5;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: #FFFAEE;
+    }
+    .button-group {
+      display: flex;
+      gap: 8px;
+      margin: 5px 0;
+    }
+    button {
+      margin: 2px;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #saveButton {
+      background-color: #DEB887;
+      color: white;
+    }
+    #importButton {
+      background-color: #DAA520;
+      color: white;
+    }
+    table {
+      border: 1px solid #FFE4B5;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      border: 1px solid #FFE4B5;
+      padding: 6px;
+      text-align: left;
+    }
+    
+    input[type="text"]:focus {
+      outline: none;
+      border-color: #DEB887;
+      box-shadow: 0 0 3px #FFE4B5;
+    }
+    
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-group">
+    <label for="accessToken">Coze Access Token:</label>
+    <input type="text" id="accessToken" placeholder="Enter your access token">
+  </div>
+  <div class="form-group">
+    <label for="datasetId">Knowledge Base ID:</label>
+    <input type="text" id="datasetId" placeholder="Enter your dataset ID">
+  </div>
+  <div class="button-group">
+    <button id="saveButton">Save Settings</button>
+    <button id="importButton">Import Current Page</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
